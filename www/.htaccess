@@ -1,0 +1,6 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^v1/([a-z0-9/]+)$   api.php?resource=$1 [nc,qsa]
